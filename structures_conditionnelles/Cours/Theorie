@@ -1,0 +1,110 @@
+1)Expressions Arithmetiques
+   Exemples 
+       2+4
+       var x=2
+       x*3
+       var y=5
+       y/x 
+2)Expressions Conditionnelles ou Booleennes:
+     Exepression  utilisant les opérateurs
+       -Comparaisons ou relationnels (>,<,>=,<=,!=,==)
+       ou 
+       -Logiques 
+          a) Negation (Non) => ! (operateur unaire)
+          b) Et =>  &&
+          c) Ou  => ||
+    Resultat est boolean(true or false)
+
+    Exemples 
+      -opérateurs Comparaisons ou relationnels 
+          a) 8>5  =>  true
+          b) 6!=5 =>  true
+          c) var x= 4   x<1   => false
+          d) var x= 4 var y=2   y<x => true
+      -opérateurs Logiques 
+          a) true && false => false
+          b) true || false => true
+          c) 8>5 &&  true  => true
+          d) 8>5 &&  6!=4  => true
+          e) 8>5 &&  6==4  => false
+          f) 8>5 ||  6==4   => true
+
+&& retourne true lorsque toutes les expressions evaluées sont vraies
+ou
+&& retourne false  dés qu'une des expression evaluée sont fausses
+
+|| retourne true lorsque l'une  des expressions evaluées est vraie
+ou
+|| retourne false  lorsque toutes les expressions evaluées sont fausses
+   
+    i) 
+      var x=5 y=12
+       x>6 && y>x => false
+       x>6 || y>x => true
+    j) Negation
+       -!(true)=>false
+       -!(false)=>true 
+       -!(8>5)
+          !(true)
+             => false
+        !(5<=1) =>true
+        !(2>5) && 5<2 =>false
+        true && false => false
+        !(2>5) && !(5<2) =>true
+         true && true  => true
+        !(2>5) !(&&) 5<2 =>true 
+         true  || false =>  true
+
+NB
+Negation Operateur        Resultat
+!(&&)                     ||
+!(||)                     &&
+!(>)                      <=
+!(<)                      >=
+!(==)                     !=
+!(!=)                     ==
+
+Expressions             Developpement Expressions      Resulat
+
+!(2>5)                  2<=5                           true 
+!(5<2)                  5>=2                           true 
+!(2>5) && !(5<2)       2<=5 && 5>=2                    true
+!(2>5) !(&&) 5<8       2<=5 || 5<8                     true 
+!(2>5 && 5<8)          2<=5 || 5>=8                    true
+
+Intéret Expressions Conditionnelles => permettent de prendre une décision
+Exemple 
+    var x=Math.random();//Generer des nombres 
+       //x=0 
+           x>0 x est Positifs
+          !(x>0) => x<=0 x n'est pas positif
+    
+    //Syntaxe 
+      if(condition){
+          //Traitement
+      }
+
+      if(!condition){
+          //Traitement
+      }
+
+      Remplacer 
+      if(condition){
+           //Traitement
+      }else{
+          else => !(condition)
+          //Traitement
+      }
+
+
+      Exemple :
+        x>0 x est Positifs
+         if(x>0){
+             alert(x + "est Positif")
+         }
+
+      !(x>0) => x<=0 x n'est pas positif
+
+      if(!(x>0)){
+            alert(x + "n'est pas positif")
+      }

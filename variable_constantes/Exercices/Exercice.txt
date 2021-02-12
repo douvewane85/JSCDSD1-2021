@@ -1,0 +1,12 @@
+Exercice 1
+   Saisir deux entiers Positifs puis calculer:
+   -Somme
+   -Produit
+   -Quotient
+   -Modulo(reste de la division entiere)=>%
+   Exemple :
+       7/2= 3      //Division Entiere
+       7.0/2 = 3.5 //Division Reelle
+       7.0%2 //Impossible
+       7%2=1
+     

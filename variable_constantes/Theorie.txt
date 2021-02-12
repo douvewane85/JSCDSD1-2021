@@ -1,0 +1,19 @@
+//Utilisation d'une fonction 
+  objet.fonction()
+
+1)Objet Math
+     //Objet Math => toutes les fonctions Mathématiques
+         // Math.PI :La constante Pi
+         // Math.sqrt(nbre):Racine Carre
+         //Math.pow(x,n)=> x à la puissance n 
+         //Math.rand(valMin,ValMax):Generer des valeurs se trouvant entre valMin et ValMax
+         //Math.floor(nbre):arrondir par defaut  un nombre
+         //Math.ceil(nbre):arrondir par defaut  un nombre
+2)Objet Date => toutes les fonctions de Date
+3)Objet Console => Lieu Teste , Visualiser Erreur
+   //Console.log():Ecrire sur la console
+
+4)Objet window : Fenetre ou votre page Web 
+    window.prompt() => prompt()
+    window.alert()  => alert()
+NB :Le mot window est facultif dans l'utilisation des fonctions de l'objet 
