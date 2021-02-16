@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+             var dateDuJour=new Date();
+             var moisChiffre=dateDuJour.getMonth()
+             var vrand=Math.floor(Math.random()*15)
+             var moisGenerer=moisChiffre+vrand 
+             if(moisGenerer==1){
+                 alert("Janvier")
+             }else{
+                 //moisGenerer!=1
+                 if(moisGenerer==2){
+                    alert("Fevrier")
+                 }else{
+                    //moisGenerer!=2 && moisGenerer!=1
+                    if(moisGenerer==3){
+                        alert("Mars")
+                    }else{
+                        //moisGenerer!=2 && moisGenerer!=1 && moisGenerer!=3
+                        if(moisGenerer==4){
+                            alert("Avril")
+                        }else{
+                            if(moisGenerer==5){
+                                alert("Mai")
+                            }else{
+                                if(moisGenerer==6){
+                                    alert("Juin")
+
+                                }else{
+                                    if(moisGenerer==7){
+                                        alert("Juillet")
+                                    }else{
+                                        if(moisGenerer==8){
+                                            alert("Aout")
+                                        }else{
+                                            if(moisGenerer==9){
+                                                alert("Septembre")
+                                            } else{
+                                                if(moisGenerer==10){
+                                                    alert("Octobre")
+                                                }else{
+                                                    if(moisGenerer==11){
+                                                        alert("Novembre")
+                                                    }else{
+                                                        if(moisGenerer==12){
+                                                            alert("Decembre")
+                                                        }else{
+                                                            alert("Erreur")
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                 }
+             }
+
+    </script>
+</body>
+</html>

@@ -108,3 +108,38 @@ Exemple
       if(!(x>0)){
             alert(x + "n'est pas positif")
       }
+
+
+//switch()...case  =>  selon...faire
+serie de if qui teste sur la meme  variable avec l'operateur == 
+if(varible==valeur1){                           
+      traitement1
+}else{
+   if(varible==valeur2){           
+     traitement2
+   }else{
+      if(varible==valeur2){
+          traitement3
+      } else{
+         traitement4
+      }
+   }
+}
+
+equivalent 
+
+switch(varible){
+    case valeur1 :
+      traitement1
+      break;
+    case valeur2 :
+      traitement2
+      break;
+    case valeur3 :
+      traitement3
+      break
+    default:
+    traitement4
+}
+
+

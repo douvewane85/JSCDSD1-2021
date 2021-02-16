@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //1+2=3 
+       //1+2+4=
+       //(1+2)+4
+       // 3+4
+          //7 
+        //1+2+5+6
+        //(1+2)+(5+6)
+          //3   + 11 
+          //  14
+
+        //------nbre1
+        //---nbre2
+        //-----nbre3
+
+        var nbre1=prompt("Entrer un nombre");
+        var nbre2=prompt("Entrer un nombre");
+        var nbre3=prompt("Entrer un nombre");
+        var min,max,moy;
+        if(nbre1>nbre2){
+          min=nbre2;
+           max=nbre1;
+        }else{
+            //nbre1<=nbre2
+            min=nbre1;
+            max=nbre2;
+        } 
+        //1--nbre3---min ------max-----
+            //min     moy      max  
+        //2-----min --nbre3----max-----
+                //min  moy     max
+
+        //3-----min ------max--nbre3---
+                //min      moy  max
+
+
+        if(nbre3<min){
+            moy=min
+            min=nbre3
+        }else{
+            //nbr3>=min
+            if(nbre3<max){
+               moy=nbr3 
+            }else{
+                moy=max
+                max=nbre3
+            }
+        }
+        alert("Ordre croissant "+ min+","+moy+","+max)
+        alert("Ordre Décroissant "+ max+","+moy+","+min)
+
+
+        
+
+
+    </script>
+</body>
+</html>
