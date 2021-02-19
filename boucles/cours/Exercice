@@ -1,0 +1,52 @@
+/*
+   Exercice 1
+     saisir un nombre entier positif N 
+     puis afficher :
+     -les valeurs  entres 1 et N 
+     -les valeurs paires  entres  1 et N 
+     -la  somme impaires  entres  1 et N 
+     -les valeurs  entres N et 1 
+
+  */
+
+  /*
+   Exercice 2
+     saisir un N  nombres entier , avec N(positif) un entier à saisir 
+     puis afficher :
+        - La valeur la plus grande des N nombres
+        - La valeur la plus petite des N nombres
+        - La valeur  paire la plus petite des N nombres
+        - La valeur impaire la plus grande des N nombres
+    
+      //Saisr N=3 
+        //1ere Saisie  val =12
+        //2eme  Saisie  val =1
+        //3eme  Saisie  val =10
+         // max= 12
+          //min =1
+          //minPair=10 
+         // maxImpair=1
+        
+  */
+
+  /*
+      saisir un N  nombres entier puis :
+        -verifier si le nombre est premier ou pas
+          Exemple : Un nombre qui n'a que 2 Diviseurs 
+                2 => 1,2 => Premier
+                3=>   1,3
+                4=> 1,2,4
+                5=> 1,5
+                6=> 1,2,3,6
+        -verifier si le nombre est parfait ou pas
+         Exemple : Un nombre dont  la somme des   Diviseurs est  egale à 2 fois le nombre
+                2 => 1,2 =>   2=>  2+1  =2*2  Pas Parfait  
+                3=>   1,3      1+3=2*3  Pas Parfait 
+                4=> 1,2,4     1+2+4=2*4   Pas Parfait 
+                5=> 1,5      1+5=2*5 Pas Parfait 
+                6=> 1,2,3,6   1+2+3+6=2*6 Parfait 
+
+        -verifier si le nombre est anstrum ou pas
+           Un nombre dont  la somme des chiffres au cube est  egale au nombre 
+            34=3*3*3 +4*4*4
+  *

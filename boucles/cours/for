@@ -1,0 +1,68 @@
+ Exemple:
+      1,2,3,4,5,6
+         Initialisation : var val=1
+          Condition :  val<=6
+          Avance : Par pas +1
+//Algo
+     val <-1
+     tantque(val<=6)  faire
+         afficher(val)
+         val <- val +1
+     ftque
+
+     //JS
+//While
+val =1
+while(val<=6){
+      alert(val)
+         val =val +1
+}
+
+//For 
+for(val=1;val<=6; val=val +1){
+      alert(val)
+}
+
+
+Exercice 2
+
+0,2,4,6,8,10
+         Initialisation : var val=0
+          Condition :  val<=10
+          Avance : Par pas +2
+
+//Algo  
+    val<-0
+    tantque(val<=10)  faire
+     afficher(val)
+         val <- val +2
+     ftque
+//JS
+ val=0
+ while(val<=10){
+     alert(val)
+     val=val+2
+ }
+
+//For 
+   for(val=0;val<=10;val=val+2){
+        alert(val)
+   }
+
+
+
+   4,3,2,1
+         Initialisation : var val=4
+          Condition :  val>=1
+          Avance : Par pas -1
+
+    //JS 
+       val=4
+       while(val>=1){
+           alert(val)
+           val=val-1
+       }
+   //For 
+   for(val=4;val>=1; val=val-1){
+        alert(val)
+   }
