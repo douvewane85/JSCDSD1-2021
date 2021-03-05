@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+     /*
+          -afficher les valeurs pairs entre 1 et N ,
+           avec N saisit et positif (While et for)
+         initialisation
+           do{
+             instruction 
+             pas
+           }while(condition)
+    NB:La Toujours au moins une fois car la condition de test est en bas
+    Utilisation : Valider des Données
+     */
+
+   /* 
+         isNaN(N)
+            -true si N n'est pas un nombre 
+            -false si N est pas un nombre 
+               N!=NaN ou isNaN(N)==false
+
+   */
+   do{
+      var N=prompt("Entrer  un nombre")
+      N=parseInt(N)
+   }while(isNaN(N)==true || N<=0)
+  
+       /* x=1 
+        while(x<=N){
+            if(x%2==0){
+                alert(x)
+            }
+            x=x+1
+        }*/  
+        x=1 
+        do{
+            if(x%2==0){
+                alert(x)
+            }
+            x=x+1 
+        }while(x<=N)
+   
+
+    </script>
+</body>
+</html>

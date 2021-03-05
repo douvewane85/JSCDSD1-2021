@@ -17,3 +17,50 @@
     window.prompt() => prompt()
     window.alert()  => alert()
 NB :Le mot window est facultif dans l'utilisation des fonctions de l'objet 
+
+4)Objet String  : Toutes les fonctions de manipulation d'une chaine de Caracteres
+        .charAt(position)=> retourne le caractere se trouvant à cette position 
+         Exemple 
+           "Bonjour".chartAt(0)  => 'B'
+           "Bonjour".chartAt(2)  => 'n'
+           "Bonjour".chartAt(6)  => 'r'
+
+           "Bonjour".endsWith('R')
+false
+"Bonjour".toLowerCase()
+"bonjour"
+"Bonjour".toUpperCase()
+"BONJOUR"
+"    Bonjour     ".trim()
+"Bonjour"
+"   Bonjour     ".trimStart()
+"Bonjour     "
+"   Bonjour     ".trimEnd()
+"   Bonjour"
+//indexOf("caractere") => retourne la position d'un caractre dans une chaine
+                       => nbre de caractere ce trouvant devant le caractere recherché
+"   Bonjour     ".trim().indexOf('B')
+0
+"   Bonjour     ".trim().indexOf('o')
+1
+"   Bonjour     ".trim().lastIndexOf('o')
+4
+"   Bonjour     ".trim().substr(0,3)
+"Bon"
+"   Bonjour     ".trim().substr(3,4)
+"jour"
+"   Bonjour     ".trim().substr(3)
+"jour"
+"   Bonjour     ".trim().substr(1,2)
+"on"
+//split() => chaine en tableau
+"   Bonjour     ".trim().split("")
+Array(7) [ "B", "o", "n", "j", "o", "u", "r" ]
+
+"Bonjour     ".trim().split("").reverse()
+Array(7) [ "r", "u", "o", "j", "n", "o", "B" ]
+//join() => tableau en  chaine 
+"Bonjour     ".trim().split("").reverse().join(',') 
+"r,u,o,j,n,o,B"
+"Bonjour     ".trim().split("").reverse().join('')
+"ruojnoB"

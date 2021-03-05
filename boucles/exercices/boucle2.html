@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            -afficher les valeurs impaires entre 10 et 1 (While et for)
+              Approche 1 :
+               - Valeur Initialisation => x=10 
+               - Condition : x<=1
+               - Pas : x=x-1
+               -Valeurs x => 10,9,8,...,1
+
+        */
+        x=10 
+        while(x<=1){
+            if(x%2!=0){
+                alert(x)
+            }
+            x=x-1 
+        }
+
+        /*
+           Approche 1 :
+               - Valeur Initialisation => x=9
+               - Condition : x<=1
+               - Pas : x=x-2
+               -Valeurs x => 9 ,7,5,3,1
+        */
+
+        for(x=9;x<=1;x=x-2){
+            alert(x)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /*
+         Exercice 2  : saisir 3 lettres puis les rangés 
+         dans l'ordre alphabetique
+      */
+      var lettre1=prompt("Entrer une lettre")
+      var lettre2=prompt("Entrer une lettre")
+      var lettre3=prompt("Entrer une lettre")
+
+         if(lettre1.length==1 && lettre2.length==1 && lettre3.length==1){
+             if(lettre1.toLowerCase()>='a' && lettre1.toLowerCase()<='z'
+             && lettre2.toLowerCase()>='a' && lettre2.toLowerCase()<='z'
+             && lettre3.toLowerCase()>='a' && lettre3.toLowerCase()<='z'){
+              var min,moy,max;
+
+                if(lettre1>lettre2){
+                   min=lettre2;
+                   max=lettre1;
+                }else{
+                   // lettre1<=lettre2
+                    min=lettre1;
+                    max=lettre2;
+                } 
+                //Ordre Alphabetique min,max
+               
+                if(lettre3<min){
+                    alert("Ordre Alphabetique "+lettre3+","+min+","+max)
+
+                }else{
+                    // lettre3>=min
+                    if(lettre3<max){
+                        //lettre3>=min && lettre3<max
+                        alert("Ordre Alphabetique "+min+","+lettre3+","+max)
+                    }else{
+                        // lettre3>=min && lettre3>=max
+                        alert("Ordre Alphabetique "+min+","+max+","+lettre3)
+                    }
+                }
+             }else{
+                alert("Un des Caracteres n'est pas une lettre") 
+             }
+             
+         }else{
+            //lettre1.length!=1 || lettre2.length!=2 || lettre3.length!=1
+            alert("Une Lettre  contient un caractere")
+         }
+    </script>
+</body>
+</html>

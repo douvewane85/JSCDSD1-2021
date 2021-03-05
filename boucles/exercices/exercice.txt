@@ -1,0 +1,15 @@
+Exercice1 
+  -afficher les valeurs pairs entre 1 et 10 
+  //A Faire 
+  -afficher les valeurs impaires entre 10 et 1 (While et for)
+  -afficher les valeurs pairs entre 1 et N , avec N saisit et positif (While et for)
+  -afficher les valeurs impaires entre N et 1 , avec N saisit et positif (While et for)
+
+  -afficher les  N premiers valeurs paires , avec N saisit et positif
+  -afficher les  N premiers valeurs impaires , avec N saisit et positif
+  -Saisir un nombre N puis tester s'il est premier ou pas,avec N  positif
+  -Saisir un nombre N puis tester s'il est parfait ou pas,avec N  positif
+     6 est parfait  => 1+2+3+6=2*6    
+  -afficher les  N premiers valeurs parfait , avec N saisit et positif
+  -afficher les  N premiers valeurs premiers , avec N saisit et positif
+    

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+         -afficher les valeurs pairs entre 1 et 10 
+           Rappel Boucle:
+           Approche 1 :
+               - Valeur Initialisation => x=1 
+               - Condition : x<=10
+               - Pas : +1 => x=x+1
+               -Valeurs x => 1,2,3,4,...,10
+                      x=1 
+                      x=1+1 =2 
+                      x=2+1=3 
+                      x=3+1=4 
+
+           Approche 2 :
+               - Valeur Initialisation => x=2 
+               - Condition : x<=10
+               - Pas : +2 
+                 x=2 
+                 x=2+2=4 
+                 x=4+2=6
+
+        //Syntaxe 1:
+             Valeur Initialisation
+           -while(Condition){
+               //Instructions
+                Pas
+           }
+         */
+       //  Approche 1 :
+         x=1 
+         while(x<=10){
+             if(x%2==0){
+                 alert(x)
+             }
+             x=x+1
+         }
+
+        //Approche 2 :
+           x=2 
+           while(x<=10){
+             alert(x)
+             x=x+2
+           }
+
+           /*Syntaxe for:
+          
+            for(Valeur Initialisation;Condition;Pas){
+                //Instructions  
+            }
+         */
+         //Approche 1 :
+         for(x=1;x<=10;x=x+1){
+            if(x%2==0){
+                alert(x)
+            }
+         }
+
+         //Approche 2 :
+         for(x=2;x<=10;x=x+2){
+            alert(x)
+         }
+    </script>
+</body>
+</html>

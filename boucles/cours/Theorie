@@ -111,3 +111,91 @@ Trois  Parties d'une partie
           val<=4   0>=1 =>true 
                 Arret
         
+
+    Structure Conditionnelle ou Alternative
+        expression  conditionelle 
+             -true 
+             -false 
+    -bloc d'instruction => ensemble instruction
+             {
+             }
+//2 Structures Conditionnelle
+     -if(contition )  instruction1 [else  instruction2]
+     -switch()
+
+a)if(contition )  instruction1 [else  instruction2]  
+   instruction1
+   if(condition1){
+       bloc1
+   }
+   if(condition2){
+       bloc2
+   }
+    if(condition3){
+       bloc3
+   }
+
+   NB :
+      condition2=!(condition1)
+      if(condition1){
+         bloc1 
+      }else{
+          bloc2
+      }
+Exemple 1:
+   //Mineur ou Majeur  
+   var age =parseInt(prompt('Entrer Age'))
+     if(age<18){
+         alert("Mineur")
+     }
+
+     if(age>=18){
+          alert("Majeur")
+     }
+ou 
+if(age<18){
+         alert("Mineur")
+     }else{
+          alert("Majeur")
+     }
+Exemple 2:
+      var mois=parseInt(prompt('Entrer Mois'))
+      if(mois==1){
+          alert("Janvier")
+      }
+ 
+     if(mois==2){
+         alert("Fevrier")
+    }
+
+    //Avec Switch 
+       switch(mois){
+           case 1:
+               alert("Janvier")
+               break
+           case 2:
+               alert("Fevrier")
+               break; 
+               `
+       }
+
+switch()
+  -1) suite de if  dont les condtions 
+       -1) Teste sur la meme variable 
+       -2) l'operateur de teste est egalité  
+
+       switch(variable){
+           case valeu1:
+             instruction;
+             break;
+           case valeu2:
+             instruction;
+             break;
+             ---
+             case valeun:
+             instruction;
+             break;
+       }
+
+//if()=> trie
+//boucle 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   /*
+        Exercice 1
+         saisir un nombre entier positif N 
+         puis afficher :
+        -les valeurs  entres 1 et N 
+        -les valeurs paires  entres  1 et N 
+        -la  somme impaires  entres  1 et N 
+        -les valeurs  entres N et 1 
+
+       N =5  somme=0
+           val=1   somme=somme +val => somme=0 + 1 =1
+           val=2 ---
+           val=3   somme=  somme+val => somme= 1+3=4 
+           val=4   ----
+           val=5  somme=  somme+val => somme= 4+5=9   
+            
+   */
+
+       // var N=prompt("Entrer un nombre")
+       // N=parseInt(N)
+          N=parseInt(prompt("Entrer un nombre"));
+          var nbre_1_N="" //Chaine vide  ou Zero de chaine
+          var pair_1_N=""
+          var somme=0
+          if(N>0){
+               let val=1
+                while(val<=N){
+
+                    nbre_1_N= nbre_1_N+val+"," //nbre_1_N+=val+","
+
+                     if(val%2==0){
+                        pair_1_N +=val+","  
+                     }else{
+                         //val%2!=0  => impairs 
+                        somme=somme+val
+                     }
+                     
+                    val=val+1 // val+=1
+                }
+                alert(nbre_1_N)
+                alert(pair_1_N)
+                var nbre_N_1=nbre_1_N.split(",").reverse().join(',')
+                alert ("La somme des valeurs impairs est "+somme)
+                alert(nbre_N_1.substr(1))
+
+          }else{
+              //N<=0
+              alert("Erreur")
+          }
+    </script>
+</body>
+</html>

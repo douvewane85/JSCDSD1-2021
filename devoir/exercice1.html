@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    /*
+        Exercice 1 : saisir a et b qui sont des entiers puis donnez
+                     les solutions de l'equation ax+b =0
+
+        parseInt(nbre):
+                 -convertion en nombre 
+                 -retourne NaN (Not a Number)
+        
+     ax+b =0
+          - x=-b/a a!=0
+          - 0x+2=0  =>  Pas de Solution 
+            - a==0 && b!=0  Pas de Solution
+          - 0x+0=0  => Infinite de Solution
+            -a==0 && b==0  => Infinite de Solution
+        
+    */
+
+    var a=parseInt(prompt("Entrer un nombre"))
+    var b=parseInt(prompt("Entrer un nombre"))
+      if(a!=NaN && b!=NaN){ 
+            if(a!=0){
+                x=-b/a
+              alert("La solution est "+ x)
+            }else{
+                //a==0 
+                if(b!=0){
+                    //a==0 && b!=0
+                    alert("Pas de Solution")
+                }else{
+                    //a==0 && b==0 
+                    alert("Infinite de Solution")
+                }
+            }
+
+      }else{
+          //a==NaN  || b==NaN 
+        alert(a+" ou "+" ne sont pas des entiers")
+      }
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+    Exercice 2
+     saisir un N  nombres entier , avec N(positif) un entier à saisir 
+     puis afficher :
+        - La valeur la plus grande des N nombres
+        - La valeur la plus petite des N nombres
+        - La valeur  paire la plus petite des N nombres
+        - La valeur impaire la plus grande des N nombres
+
+        //Saisr N=3 
+        //1ere Saisie  val =12
+        //2eme  Saisie  val =1
+        //3eme  Saisie  val =10
+
+          "12,1,10"
+          ["12","1","10"]
+          ["1","10","12"]
+          "1,10,12"
+
+         // max= 12
+          //min =1
+          //minPair=10 
+         // maxImpair=1
+
+*/
+N=parseInt(prompt("Entrer Le Nombre de Saisies  "));
+
+if(N>0){
+         nbre_saisie=1 
+         var chaine="";
+         while(nbre_saisie<=N){
+           val= parseInt(prompt("Entrer un nombre"))
+               //1-accumuler toutes les  valeurs saisies dans une chaine 
+               chaine=chaine+val+","
+               // nbre_saisie=nbre_saisie+1 
+                ///nbre_saisie+=1  
+               nbre_saisie++
+            //n=n+x equivalent  n+=x 
+               // si x==1 alors n++(Incrementation) 
+          }
+              //chaine.lastIndexOf(",") => retourne  la Position de la derniere virgule
+                chaine= chaine.substr(0,chaine.lastIndexOf(","))
+                //2-Transformer la chaine en Tableau 
+                 tableau =chaine.split(",")
+               //3-Trier le Tableau sort() dans l'ordre croissant 
+                 tableau=tableau.sort((a,b)=>{
+                     return b-a;
+                 })
+               //4-Transformer le Tableau en  chaine 
+               chaine= tableau.join(',')
+                alert(chaine)
+               //5- Val plus grande => Dernier Caractere  de la Chaine 
+                max=chaine.substr(chaine.lastIndexOf(",")+1)
+                alert("Max "+max)
+               //6- Val plus petite => Premier Caractere  de la Chaine
+                  min=chaine.substr(0,chaine.indexOf(",")) 
+                 alert("Min "+min)
+
+}else{
+    alert("Erreur")
+}
+  
+    </script>
+</body>
+</html>
